@@ -45,7 +45,7 @@ public class MergeLog {
 //		SimpleDateFormat sdf = new SimpleDateFormat();
 //		sdf.applyPattern("yyyy-MM-dd HH£ºmm£ºss");
 		Date date = new Date();
-		String logfile = System.getProperty("user.dir").toString()+"\\log\\mergelog.txt";
+		String logfile = System.getProperty("user.dir").toString()+File.separator+"log"+File.separator+"mergelog.txt";
 		File file = new File(logfile);
 		if(!file.exists())
 			file.createNewFile();
