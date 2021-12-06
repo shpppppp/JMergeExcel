@@ -10,7 +10,7 @@ import java.util.ArrayList;
  *
  */
 public class GetConfig {
-	static String filePath = System.getProperty("user.dir").toString()+"\\config\\config.txt";
+	static String filePath = System.getProperty("user.dir").toString()+File.separator+"config"+File.separator+"config.txt";  //根据操作系统使用正确的文件分隔符
 	ArrayList tList = new ArrayList();
 	
 	/***
